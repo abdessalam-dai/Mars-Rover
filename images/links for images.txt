@@ -1,0 +1,42 @@
+mars land:
+https://www.dlr.de/dlr/en/Portaldata/1/Resources/bilder/missionen/mars_2013/16_9/scaled/Atlantis_mosaic_co_xl.jpg
+
+mars land 2:
+https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2003/04/valley_networks_suggest_that_rivers_once_flowed_on_mars/9504003-4-eng-GB/Valley_networks_suggest_that_rivers_once_flowed_on_Mars_node_full_image_2.jpg
+
+mars land 3:
+https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2012/hadleycrater.jpg
+
+mars land 4:
+http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2009/11/kasei_valles_and_sacra_fossae._north_is_to_the_right/10255333-2-eng-GB/Kasei_Valles_and_Sacra_Fossae._North_is_to_the_right_node_full_image_2.jpg
+
+bg:
+https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg?cs=srgb&dl=ai-artificial-intelligence-astronomy-73910.jpg&fm=jpg
+
+rock1:
+http://icons.iconarchive.com/icons/zairaam/bumpy-planets/256/06-mars-icon.png
+
+rock2 :
+https://png2.kisspng.com/sh/8dfc13179d9a08606aac89b11e769c20/L0KzQYm3U8MxN6V5fZH0aYP2gLBuTf1ieqQyfep5bHB1ccXwjB4uepD7feQ2bnH2cX7pjP9kc15ui95qbnSwfbb7hf9zcaVqRd9udHXygn68gfJmPWNoe9ZuZknlQnA9VsExP2E7TaMAMkK3QoO7V8Y6OWQ4RuJ3Zx==/kisspng-mars-exploration-rover-nasa-block-island-meteorite-meteor-5abe52ccdef9b2.6610706515224224769133.png
+
+rock3:
+http://icons.iconarchive.com/icons/goodstuff-no-nonsense/free-space/512/asteroid-2-icon.png
+
+rover:
+http://icons.iconarchive.com/icons/goodstuff-no-nonsense/free-space/256/space-rover-2-icon.png
+
+rover2:
+https://image.flaticon.com/icons/svg/270/270121.svg
+
+rover3:
+https://image.flaticon.com/icons/svg/361/361723.svg
+
+rover4:
+https://image.flaticon.com/icons/svg/290/290874.svg
+
+mars1:
+https://image.flaticon.com/icons/svg/178/178547.svg
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">

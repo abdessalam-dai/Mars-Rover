@@ -1,0 +1,434 @@
+/* Global Styles */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.dlr.de/dlr/en/Portaldata/1/Resources/bilder/missionen/mars_2013/16_9/scaled/Atlantis_mosaic_co_xl.jpg');
+    background-repeat: no-repeat;
+}
+
+select,
+button {
+    cursor: pointer;
+    font-family: 'Righteous', arial;
+    font-weight: 100
+}
+
+input,
+button,
+select {
+    border-radius: 3px;
+    outline: none;
+}
+
+button:hover,
+button:focus,
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+    box-shadow: 0 0 2px #333;
+}
+
+#user-command,
+#btn-command,
+#cmd-btns button,
+#movs,
+#back-forw,
+#tools-bar button {
+    border: 1px solid #636363;
+}
+
+.t-center {
+    text-align: center;
+}
+
+@media (max-width: 335px) {
+    #title {
+        display: none !important;
+    }
+}
+
+/* Main Styles */
+#whitescreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff7ea;
+    z-index: 200;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0;
+    font-size: 23px;
+    font-family: 'Righteous', arial;
+    background: #fff7ea;
+    z-index: 100;
+}
+
+#loading img {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    animation: animatePlanet 2.5s infinite ease-in-out;
+}
+
+@keyframes animatePlanet {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    padding: 14px 0;
+    z-index: 10;
+}
+
+#title span {
+    font-family: 'Black Ops One', arial;
+    font-size: 20px;
+    color: #fff;
+}
+
+#tools-bar {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    display: none;
+    width: 80px;
+    padding: 5px 0 4px;
+    background: rgba(255, 255, 255, .7);
+    z-index: 10;
+}
+
+#tools-bar button {
+    margin: 3px 3px;
+    padding: 4px;
+    background: #ddd;
+}
+
+#toggle-tools,
+#help {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    padding: 1px 2px;
+    border: none;
+    font-size: 15px;
+    background: transparent;
+    color: rgba(255, 255, 255, .9);
+    z-index: 1;
+}
+
+#help {
+    top: 80px;
+}
+
+#toggle-tools:hover,
+#help:hover,
+#toggle-tools:focus,
+#help:focus {
+    box-shadow: none;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#rover {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+#rock1,
+#rock2,
+#rock3,
+#rock4,
+#rock5,
+#rock6,
+#rock7,
+#rock8,
+#rock9,
+#rock10 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+#commands {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 7px;
+    background: rgba(255, 255, 255, .7);
+    z-index: 10;
+}
+
+#cmd-btns {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 6px 5px;
+    background: rgba(255, 255, 255, .7);
+    z-index: 10;
+}
+
+#user-command {
+    float: left;
+    width: 100px;
+    height: 35px;
+    padding: 0 10px;
+    font-family: 'Bungee', tahoma;
+}
+
+#btn-command {
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+#cmd-btns button,
+#cmd-btns input,
+#cmd-btns select {
+    margin: 3px 1px;
+    padding: 4px;
+}
+
+#movs {
+    width: 40px;
+    padding: 4px;
+    font-family: 'Righteous', arial;
+}
+
+#back-forw {
+    padding: 3px !important;
+}
+
+#pics {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: rgba(255, 255, 255, .85);
+    z-index: 100;
+}
+
+.show-pic {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#empty-pic,
+#pic-count {
+    position: absolute;
+    left: 0;
+    font-family: 'Righteous', arial;
+    z-index: 10;
+}
+
+#empty-pic {
+    top: 40px;
+    width: 100%;
+    font-size: 35px;
+}
+
+#pic-count {
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    padding: 4px 5px;
+    border: none;
+    background: #3e3838;
+    color: #fff;
+}
+
+#show-pic2,
+#show-pic3,
+#show-pic4,
+#show-pic5,
+#show-pic6,
+#show-pic7,
+#show-pic8,
+#show-pic9,
+#show-pic10 {
+    display: none;
+}
+
+#close-pics,
+#remove-pic,
+#prev-pic,
+#next-pic,
+#pics-count,
+#close-anl {
+    position: absolute;
+    top: 10px;
+    padding: 4px 5px;
+    border: none;
+    background: #3e3838;
+    color: #fff;
+    z-index: 10;
+}
+
+#close-pics {
+    right: 10px;
+}
+
+#remove-pic {
+    right: 40px;
+}
+
+#prev-pic,
+#next-pic {
+    right: 100px;
+}
+
+#next-pic {
+    right: 80px;
+}
+
+#pics-count {
+    top: unset;
+    left: 10px;
+    bottom: 10px;
+    font-family: 'Righteous', arial;
+    font-size: 15px;
+}
+
+#rock-analysis {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 15px;
+    overflow-y: scroll;
+    font-family: 'Righteous', arial;
+    background: rgba(255, 255, 255, .85);
+    z-index: 100;
+}
+
+#rock-analysis .title {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+#analysis {
+    display: none;
+    margin-top: 25px;
+}
+
+#loading-anl {
+    width: 100%;
+    margin: 20px auto;
+    background-color: grey;
+}
+
+#loading-anl #bar { 
+    display: none;
+    width: 1%;
+    height: 30px;
+    background: #0d8392;
+    animation: anlAnimation 2s forwards ease-in-out;
+}
+
+@keyframes anlAnimation {
+    0% {
+        width: 1%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#close-anl {
+    right: 10px;
+}
+
+#no-rocks {
+    position: absolute;
+    width: 70%;
+    top: 45vh;
+    left: 15%;
+    font-family: arial;
+    font-size: 20px;
+    color: #f14831;
+}
+
+#anl-ok {
+    display: none;
+    margin-top: 20px;
+    padding: 4px 6px;
+    border: none;
+    background: #3e3838;
+    color: #fff;
+}
+
+.green-c {
+    color: #659209;
+}
+
+#footer {
+    position: fixed;
+    top: 120px;
+    left: -55px;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Marck Script', arial;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+    transform: rotate(-90deg);
+    z-index: 10;
+}
