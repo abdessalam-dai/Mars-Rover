@@ -12,8 +12,8 @@
 body {
     width: 100%;
     height: 100vh;
-    background-image: url('https://www.dlr.de/dlr/en/Portaldata/1/Resources/bilder/missionen/mars_2013/16_9/scaled/Atlantis_mosaic_co_xl.jpg');
-    background-repeat: no-repeat;
+    background: url("../images/mars-land.jpg") no-repeat;
+    background-size: cover;
 }
 
 select,

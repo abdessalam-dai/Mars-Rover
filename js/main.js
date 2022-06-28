@@ -1,5 +1,3 @@
-// alert("Have fun!");
-
 document.onreadystatechange = function () {
     var state = document.readyState;
     if (state == 'interactive') {
@@ -9,7 +7,7 @@ document.onreadystatechange = function () {
             document.getElementById('interactive');
             document.getElementById('whitescreen').style.visibility = "hidden";
             document.getElementById('content').style.visibility = "visible";
-            setInterval(loading, 10000);
+            setInterval(loading, 3000);
         }, 1000);
     }
 };
@@ -30,7 +28,7 @@ var lcrType = "";
 var cPics = 0;
 var slideIndex = 1;
 var picsElements = ["#show-pic1", "#show-pic2", "#show-pic3", "#show-pic4", "#show-pic5", "#show-pic6", "#show-pic7", "#show-pic8", "#show-pic9", "#show-pic10"];
-var currentMapBg = "url('https://www.dlr.de/dlr/en/Portaldata/1/Resources/bilder/missionen/mars_2013/16_9/scaled/Atlantis_mosaic_co_xl.jpg')";
+var currentMapBg = "url('images/mars-land.jpg')";
 
 $(document).ready(function () {
     for (var i = 0; i < 10; i++) {
@@ -356,9 +354,9 @@ $(document).ready(function () {
     var body = $("body"),
         color1 = "#C34832",
         color2 = "#DF6032",
-        bg1 = "url('https://www.dlr.de/dlr/en/Portaldata/1/Resources/bilder/missionen/mars_2013/16_9/scaled/Atlantis_mosaic_co_xl.jpg')",
-        bg2 = "url('https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2003/04/valley_networks_suggest_that_rivers_once_flowed_on_mars/9504003-4-eng-GB/Valley_networks_suggest_that_rivers_once_flowed_on_Mars_node_full_image_2.jpg')",
-        bg3 = "url('https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2012/hadleycrater.jpg')";
+        bg1 = "url('images/mars-land.jpg')",
+        bg2 = "url('images/mars-land-2.jpg')",
+        bg3 = "url('images/mars-land-3.jpg')";
 
     // Move
     moveBtn.click(function () {
